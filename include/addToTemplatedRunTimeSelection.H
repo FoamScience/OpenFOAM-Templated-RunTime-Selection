@@ -38,17 +38,17 @@ Description
     const ::Foam::word ns::childType<Targs >::                                 \
         typeName(ns::childType<Targs >::typeName_());                          \
                                                                                \
-    /* Define child debug switch */                                            \
+    /* Define child debug switch                                               \
     template<>                                                                 \
     int ns::childType<Targs >::debug                                           \
     (                                                                          \
         ::Foam::debug::debugSwitch(ns::childType<Targs >::typeName_(), 0)      \
     );                                                                         \
-    /* Register the debug switch */                                            \
     template<>                                                                 \
     const Foam::RegisterDebugSwitch<ns::childType<Targs >>                     \
     Foam::RegisterDebugSwitch<ns::childType<Targs >>                           \
         ::registerDebugSwitch(ns::childType<Targs >::typeName_());             \
+    */                                                                         \
                                                                                \
     /* Add child to the base's run-time selection tabe */                      \
     namespace ns {                                                             \

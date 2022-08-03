@@ -68,6 +68,7 @@ Description
     const ::Foam::word baseType<Targs >::typeName                              \
         (baseType<Targs >::typeName_());                                       \
                                                                                \
+    /*
     template<>                                                                 \
     int baseType<Targs >::debug                                                \
     (                                                                          \
@@ -77,6 +78,7 @@ Description
     const Foam::RegisterDebugSwitch<baseType<Targs >>                          \
     Foam::RegisterDebugSwitch<baseType<Targs >>                                \
         ::registerDebugSwitch(baseType<Targs >::typeName_());                  \
+    */                                                                         \
     defineVariadicTemplatedRunTimeSelectionTablePtr(baseType,dictionary,Targs);
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
